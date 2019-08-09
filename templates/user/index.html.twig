@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello UserController!{% endblock %}
+
+{% block body %}
+    <h1 class=""> Connexion </h1>
+
+    {% for user in Connexion %}
+        <div class="row">
+            <a href="#">
+                <img class="img-fluid rounded" width="20px" src="/images/{{ user.avatar }}" alt="{{ user.name }}">
+            </a>
+        </div>
+    {% endfor %}
+{% endblock %}
